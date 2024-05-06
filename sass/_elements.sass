@@ -1,0 +1,323 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$black: #000
+$yelow: #ffcc0046
+$third: #3C84AB
+$second: #85CDFD
+$prime: #ff9c68
+
+body
+    min-height: 100vh
+    color: #fff
+    display: flex
+    font-size: 1rem
+    line-height: 1.625rem
+    flex-direction: column
+    background-color: $black
+    font-family: 'Poppins', sans-serif
+    scroll-behavior: smooth
+    position: relative
+    z-index: 1
+
+    &.active
+        overflow: hidden
+
+mark
+    background-color: transparent
+    color: #FFB18E
+
+h1,h2,h3,h4,h5,h6
+    font-weight: 400
+    line-height: 120%
+    margin: 0 0 20px
+
+h1
+    font-size: 3rem
+    line-height: 4.75rem
+
+h2, .h2
+    font-size: 2.5rem
+    line-height: 4rem
+    margin-bottom: 52px
+
+h3
+    font-size: 32px
+    margin-bottom: 15px
+
+
+ul, ol
+    padding-left: 25px
+    margin-bottom: 24px
+    li
+        margin: 0
+        font-size: 20px
+        line-height: 1.3
+        padding: 2px 0
+
+ul
+    list-style: none
+    padding-left: 0
+    li
+        position: relative
+        z-index: 1
+        padding-left: 25px
+        &::before
+            content: '-'
+            display: block
+            position: absolute
+            left: 0
+
+.container
+    width: 100%
+    max-width: 1282px
+    padding: 0 24px
+    margin: 0 auto
+    position: relative
+    z-index: 1
+
+p
+    font-size: 20px
+    line-height: 1.3
+
+img
+    max-width: 100%
+
+.nowrap
+    white-space: nowrap
+
+a,
+button
+    color: white
+    transition: all ease .3s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    &:hover
+        opacity: .8
+
+iframe
+    width: 100% !important
+    aspect-ratio: 16/9
+
+section
+    padding: 100px 0
+    position: relative
+
+.center
+    padding-top: 40px
+    text-align: center
+
+.btn
+    font-weight: 400
+    font-size: 13px
+    line-height: 130%
+    text-decoration: none
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+    color: $black
+    border: 1px solid $prime
+    padding: 8px 16px
+    background-color: $prime
+    border-radius: 8px
+
+    &:hover
+        opacity: 1
+        background-color: #E0793B
+        border-color: #E0793B
+
+    &:active
+        opacity: 1
+        transform: scale(.95)
+
+    &[disabled]
+        color: rgba(0, 0, 0, .2)
+        background-color: rgba($prime, .3)
+        cursor: unset
+        animation: none
+        pointer-events: none
+        box-shadow: none
+
+    &_outline
+        background-color: transparent
+        border-color: white
+        color: white
+        &:hover
+            border-color: white
+            background-color: rgba(white, .15)
+
+    &_link
+        display: inline-block
+        text-decoration: none
+        padding: 8px 24px 8px 54px
+        text-align: center
+        font-size: 1rem
+        line-height: 1.625rem
+        position: relative
+        z-index: 1
+        &::before
+            transition: all 0.4s cubic-bezier(.6,.01,.05,.95)
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 0
+            left: 0
+            width: 42px
+            height: 42px
+            border-radius: 21px
+            background-color: #fff
+            background-image: url('../img/arrow-right.svg')
+            background-repeat: no-repeat
+            background-position: center left 7px
+            background-size: auto 70%
+            z-index: -1
+        &:hover
+            color: $black
+            opacity: 1
+            padding-left: 24px
+            &::before
+                background-image: none
+                width: 100%
+
+.wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+input,
+textarea,
+select
+    display: block
+    width: 100%
+    height: 55px
+    background: #fff
+    font-weight: 500
+    font-size: 14px
+    line-height: 32px
+    padding: 0 20px
+    text-align: left
+    color: $black
+    appearance: none
+    border-radius: 60px
+    border: 1px solid rgba($black, .8)
+    margin-bottom: 16px
+    &::placeholder
+        color: rgba(#000 , .6)
+        font-weight: 300
+
+label
+    color: $black
+    display: block
+    font-weight: 400
+    font-size: 14px
+    line-height: 140%
+    margin-bottom: 2px
+    opacity: .7
+    i
+        color: red
+
+select
+    cursor: pointer
+    background-image: url('../img/arrow-down.svg')
+    background-repeat: no-repeat
+    background-position: center right 18px
+    background-size: 20px auto
+    padding-right: 40px
+    position: relative
+    z-index: 1
+    margin: 0 0 10px
+
+input[name="volume"]
+    background-image: url('../img/kg.svg')
+    background-repeat: no-repeat
+    background-position: center right 20px
+    background-size: 25px auto
+
+textarea
+    min-height: 200px
+    line-height: 130%
+    resize: none
+    padding: 8px 10px 0
+    height: unset
+
+@media screen and ( max-width: 1000px )
+    .btn
+        font-size: 14px
+    h1
+        font-size: 1.75rem
+        line-height: 42px
+
+    h2
+        font-size: 1.25rem
+        line-height: 28px
+
+    p
+        font-size: 16px
+
+    .btn
+        min-width: 195px
+        &-menu
+            z-index: 9999
+            display: inline-block
+            position: relative
+            width: 40px
+            height: 40px
+            margin: 0
+            span
+                position: absolute
+                top: 50%
+                left: 25%
+                margin-top: -1px
+                display: block
+                width: 50%
+                height: 2px
+                transition: all ease .3s
+                border-radius: 2px
+                background-color: #fff
+                &::before,
+                &::after
+                    content: ''
+                    display: block
+                    width: 100%
+                    height: 2px
+                    background-color: #fff
+                    position: absolute
+                    top: 6px
+                    left: 0
+                    transition: all ease .3s
+                    border-radius: 2px
+                &::after
+                    top: -6px
+                    width: 100%
+                    left: 0
+
+            &.active
+                span
+                    top: 55%
+                    left: 50%
+                    transform: translate(-50%, -50%) rotate(-45deg)
+                    &::before
+                        background-color: transparent
+                    &::after
+                        top: 50%
+                        width: 100%
+                        left: 50%
+                        transform: translate(-50%, -50%) rotate(-90deg)
+
+@media screen and ( max-width: 700px )
+    .btn
+        font-size: 12px
+        padding: 8px 30px 7px
+
+    .container
+        padding: 0 16px
+
+    section
+        padding: 60px 0
