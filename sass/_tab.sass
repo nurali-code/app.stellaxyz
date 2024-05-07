@@ -1,5 +1,6 @@
 .tab
     &-btns
+        margin: 0 0 16px
         display: flex
         align-items: center
         border-bottom: 1px solid #222
@@ -15,6 +16,16 @@
         align-items: center
         gap: 8px
         padding: 12px 16px
+        border-bottom: 1px solid rgba(0, 0, 0, 0)
         img
             width: 16px
             height: 16px
+
+        &:hover
+            color: white
+            opacity: 1
+
+        &.is__active
+            color: $prime
+            border-color: $prime 
+
