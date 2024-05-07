@@ -23,6 +23,7 @@ body
     scroll-behavior: smooth
     position: relative
     z-index: 1
+    padding-top: 74px
 
     &.active
         overflow: hidden
@@ -34,7 +35,7 @@ mark
 h1,h2,h3,h4,h5,h6
     font-weight: 400
     line-height: 120%
-    margin: 0 0 20px
+    margin: 0
 
 h1
     font-size: 3rem
@@ -48,7 +49,6 @@ h2, .h2
 h3
     font-size: 32px
     margin-bottom: 15px
-
 
 ul, ol
     padding-left: 25px
@@ -248,8 +248,6 @@ textarea
     height: unset
 
 @media screen and ( max-width: 1000px )
-    .btn
-        font-size: 14px
     h1
         font-size: 1.75rem
         line-height: 42px
@@ -262,7 +260,8 @@ textarea
         font-size: 16px
 
     .btn
-        min-width: 195px
+        font-size: 14px
+
         &-menu
             z-index: 9999
             display: inline-block

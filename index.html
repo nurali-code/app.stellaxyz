@@ -9,8 +9,7 @@
     <link href="./favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-        
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,7 +17,6 @@
     <header class="header">
         <div class="container wrap">
             <a href="./index.html" class="logo"><img loading="lazy" src="img/logo.svg" alt="logo"></a>
-            <button class="btn-menu"> <span></span></button>
             <nav class="wrap">
                 <a href="#" class="is__active" target="_blank">Strategy</a>
                 <a href="#" target="_blank">Lend</a>
@@ -29,12 +27,14 @@
             </nav>
             <img src="img/arbitrum.svg" class="header__icon" alt="i">
             <a href="#" target="_blank" class="btn btn_outline">Connect Wallet</a>
+            <button class="btn-menu"> <span></span></button>
         </div>
     </header>
 
     <main class="main">
         <div class="container">
-            <h1 class="h2">Strategy List</h1>
+            <h1 class="h5">Strategy List</h1>
+            <img src="img/point-sharing.svg" alt="sharing">
             <div class="tab-btns">
                 <button class="tab__btn is__active">🔎 All</button>
                 <button class="tab__btn">🔥 Hot</button>
@@ -44,7 +44,7 @@
                 <button class="tab__btn"><img src="img/traderjoe.svg" alt="i"> Trader Joe V2</button>
                 <button class="tab__btn"><img src="img/uniswap.svg" alt="i"> Uniswap V3</button>
             </div>
-            <div class="MuiStack-root css-guty4c">
+            <div class="MuiStack-root css-guty4c main-headline">
                 <div class="MuiStack-root css-95atsm">
                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1q9qcw5">Strategy</h6>
                     <div class="MuiStack-root css-1pesj8u"></div>
@@ -59,7 +59,6 @@
                 <div class="MuiStack-root css-6f4rlc">
                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1q9qcw5">Protocol</h6>
                 </div>
-                <div class="MuiBox-root css-1ih4w1z"></div>
             </div>
 
             <div class="MuiStack-root css-7p4kzq">
@@ -69,7 +68,7 @@
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
                                         height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x4186bfc76e2e237523cbc30fd220fe055156b41f.svg"
+                                        src="img/0x.svg"
                                         style="color: transparent; margin-left: 0px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
@@ -102,12 +101,13 @@
                                 <div class="MuiStack-root css-gjizid">
                                     <div class="MuiStack-root  css-2tztx7"
                                         aria-label="Earn EigenLayer Points and Kelp Miles up to 7.5x">
-                                        <div class="MuiStack-root css-u4p24i"><img alt="eigen" loading="lazy" width="14"
-                                                height="14" decoding="async" data-nimg="1"
-                                                src="/static/logos/points/eigen.svg" style="color: transparent;"><img
+                                        <div class="MuiStack-root css-u4p24i">
+                                            <img alt="eigen" loading="lazy" width="14" height="14" decoding="async"
+                                                data-nimg="1" src="../img/eigen.svg" style="color: transparent;"><img
                                                 alt="kelp" loading="lazy" width="14" height="14" decoding="async"
-                                                data-nimg="1" src="/static/logos/points/kelp.svg"
-                                                style="color: transparent; margin-left: -2px;"></div>
+                                                data-nimg="1" src="../img/kelp.svg"
+                                                style="color: transparent; margin-left: -2px;">
+                                        </div>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-kqdrv3">7.5x</h6>
                                     </div>
                                 </div>
@@ -152,31 +152,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -220,10 +195,10 @@
                                     <div class="MuiStack-root  css-2tztx7"
                                         aria-label="Earn EigenLayer Points and Etherfi Points up to 6x">
                                         <div class="MuiStack-root css-u4p24i"><img alt="eigen" loading="lazy" width="14"
+                                                height="14" decoding="async" data-nimg="1" src="../img/eigen.svg"
+                                                style="color: transparent;"><img alt="etherfi" loading="lazy" width="14"
                                                 height="14" decoding="async" data-nimg="1"
-                                                src="/static/logos/points/eigen.svg" style="color: transparent;"><img
-                                                alt="etherfi" loading="lazy" width="14" height="14" decoding="async"
-                                                data-nimg="1" src="/static/logos/points/etherfi.svg"
+                                                src="img/etherfi.svg"
                                                 style="color: transparent; margin-left: -2px;"></div>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-kqdrv3">6x</h6>
                                     </div>
@@ -269,31 +244,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -345,7 +295,7 @@
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
                                                 <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/camelot.svg"
+                                                        src="../img/camelot.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Camelot
                                                     </p>
@@ -355,31 +305,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -444,31 +369,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -533,31 +433,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -622,31 +497,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -711,31 +561,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -800,31 +625,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -906,31 +706,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -1012,31 +787,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -1101,31 +851,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="MuiStack-root css-wwkw3j"><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button"><svg width="10" height="16" viewBox="0 0 12 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" opacity="1"
-                                            class="css-sclmuu"></path>
-                                        <path
-                                            d="M11 17L6.07689 12.0769L1.15381 17V2.23077C1.15381 1.90435 1.28348 1.5913 1.51429 1.36048C1.74511 1.12967 2.05816 1 2.38458 1H9.76919C10.0956 1 10.4087 1.12967 10.6395 1.36048C10.8703 1.5913 11 1.90435 11 2.23077V17Z"
-                                            fill="#FF9C68" stroke-linecap="round" stroke-linejoin="round" opacity="0"
-                                            class="css-sclmuu"></path>
-                                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-11riuvn"
-                                    tabindex="0" type="button">
-                                    <div class=" css-cq6ve" sx="[object Object]">
-                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none" class="injected-svg"
-                                                data-src="/static/icons/chevron-down.svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></div>
-                                    </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                </button></div>
                         </div>
                     </div>
                 </div>
@@ -1134,6 +859,10 @@
         </div>
 
     </main>
+
+    <footer>
+
+    </footer>
 
 
 
