@@ -2,7 +2,6 @@
 @import 'elements'
 @import 'header'
 @import 'modal'
-@import 'slick'
 @import 'tab'
 
 .main
@@ -49,6 +48,131 @@
     &-point-sharing
         display: block
         margin: 0 0 24px
+
+    @media screen and ( max-width: 900px )
+        .h5
+            font-size: 16px
+            line-height: 2.3125rem
+
+.position
+    background-color: #111111
+    text-align: center
+    padding: 60px 16px
+    &-top
+        margin-bottom: 24px
+
+    &-title
+        gap: 42px
+        &[data-position="1"]
+            display: none
+
+        b, i
+            display: block
+
+        b
+            font-size: 0.6875rem
+            line-height: 1.125rem
+            font-weight: normal
+            letter-spacing: 0.02rem
+            color: #A3A3A3
+
+        i
+            font-style: normal
+            font-size: 1.1875rem
+            line-height: 1.875rem
+            font-weight: normal
+            letter-spacing: 0.02rem
+
+    &-wrap
+        width: 50%
+        border-bottom: 1px solid #595959
+
+    &__btn
+        width: 50%
+        padding: 12px 16px
+        position: relative
+        top: 1px
+        border-bottom: 1px solid rgba(0, 0, 0, 0)
+        &:active
+            border-color: $prime
+
+        &.is__active
+            border-color: $prime
+            &::before
+                content: ""
+                display: inline-block
+                vertical-align: middle
+                background-color: $prime
+                width: 6px
+                height: 6px
+                border-radius: 50%
+                transition: inherit
+                margin-right: 10px
+
+    img
+        max-width: 150px
+        display: block
+        margin: 0 auto 20px
+
+    h2
+        font-size: 1rem
+        line-height: 1.625rem
+        font-weight: normal
+        letter-spacing: 0.02rem
+        margin: 0 0 20px
+
+    @media screen and ( max-width: 700px )
+        &-title
+            order: 1
+
+        &-wrap
+            width: 100%
+            order: 2
+
+        &__btn
+            font-size: 0.8125rem
+            line-height: 1.3125rem
+            letter-spacing: 0.02rem
+            padding: 10px
+
+.leaderboard
+    &-wrap 
+        align-items: flex-start
+        
+    .container
+        max-width: 1282px
+
+    .col
+        width: 49%
+        &__heading
+            margin: 0 0 8px
+            font-size: 1.1875rem
+            line-height: 1.875rem
+            font-weight: normal
+            letter-spacing: 0.02rem
+
+    @media screen and ( max-width: 1000px )
+        .col
+            width: 100%
+            background-color: black
+            border: 1px solid rgb(89, 89, 89)
+            overflow-y: scroll
+            -ms-overflow-style: none
+            scrollbar-width: none
+            &::-webkit-scrollbar
+                display: none
+                width: 0
+                height: 0
+
+            &__heading
+                display: none
+
+            .css-1d7dhat
+                display: none
+
+            .css-gtfp90,
+            .css-1hnws38
+                min-width: 500px
 
 @import 'headline'
 @import 'content'

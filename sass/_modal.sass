@@ -5,9 +5,8 @@
     left: 0
     height: 100%
     width: 100%
-    z-index: 9999
+    z-index: 999999
     background-color: rgba(#000, 0.6)
-    padding: 0
     box-sizing: border-box
     &-content
         width: 94%
@@ -44,7 +43,6 @@
             margin-top: 5px
             padding: 8px 22px
 
-
     &-close
         position: absolute
         top: 22px
@@ -60,9 +58,6 @@
     &.active
         visibility: visible
         opacity: 1
-
-    &.is-open
-        display: block
 
     @media screen and ( max-width: 1170px )
         &-content
