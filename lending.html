@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella</title>
+    <link href="./favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container wrap">
+            <a href="./index.html" class="logo"><img loading="lazy" src="img/logo.svg" alt="logo"></a>
+            <nav class="wrap">
+                <a href="#" class="is__active" target="_blank">Strategy</a>
+                <a href="#" target="_blank">Lend</a>
+                <a href="#" target="_blank">Your Position</a>
+                <hr>
+                <a href="#" target="_blank">Analytics</a>
+                <a href="#" target="_blank">Leaderboard</a>
+            </nav>
+            <img src="img/arbitrum.svg" class="header__icon" alt="i">
+            <a href="#" target="_blank" class="btn btn_outline">Connect Wallet</a>
+            <button class="btn-menu"> <span></span></button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="h5">Lending Pools</h1>
+
+            <div class="MuiStack-root css-b9w1u9">
+                <div class="MuiStack-root css-x97obs">
+                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1q9qcw5">Asset</h6>
+                </div>
+                <div class="MuiStack-root css-6f4rlc">
+                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1q9qcw5">APY</h6><svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
+                        aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                        style="font-size: 12px; color: currentcolor;">
+                        <path
+                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="MuiStack-root css-6f4rlc">
+                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1q9qcw5">Total Supply</h6>
+                </div>
+                <div class="MuiStack-root css-6f4rlc">
+                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1q9qcw5">Total Borrow</h6>
+                </div>
+                <div class="MuiBox-root css-6k9k56"></div>
+            </div>
+
+            <div class="MuiStack-root css-1wili8m">
+                <a class="css-1fn1rmh" href="#">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc">
+                            <img alt="token-image-0x82...bab1" loading="lazy" width="32" height="32" decoding="async"
+                                data-nimg="1" class="css-1i8k1gd" src="img/eth.svg" style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">ETH</p>
+                            <div class=" MuiBox-root css-dxt8m4"
+                                aria-label="The pool lends assets to both Hyper and Standard strategies.">
+                                <div class="MuiBox-root css-79elbk">
+                                    <div class="MuiBox-root css-1hki280">
+                                        <div class="MuiBox-root css-1kby21v">
+                                            <div class="text-container MuiBox-root css-ot23c2"><span
+                                                    class="MuiTypography-root MuiTypography-subtitle1-mono css-1mhrmsa">Hyper</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-glow MuiBox-root css-1u3hqx3">
+                                        <div class="border-glow-inner-container MuiBox-root css-zx1qif">
+                                            <div class="border-glow-inner MuiBox-root css-xrr8tt"></div>
+                                        </div>
+                                    </div>
+                                    <div class="border-gradient MuiBox-root css-jhcsam">
+                                        <div class="border-gradient-inner MuiBox-root css-xrr8tt"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-1vd84sn"><img alt="eigen" loading="lazy" width="16"
+                                    height="16" decoding="async" data-nimg="1" src="img/eigen.svg"
+                                    style="color: transparent;"><img alt="kelp" loading="lazy" width="16" height="16"
+                                    decoding="async" data-nimg="1" src="img/kelp.svg"
+                                    style="color: transparent; margin-left: -2px;"><img alt="etherfi" loading="lazy"
+                                    width="16" height="16" decoding="async" data-nimg="1" src="img/etherfi.svg"
+                                    style="color: transparent; margin-left: -2px;"></div>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">8.635%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">594.62</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($1.786m)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">549.65</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($1.651m)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a>
+                <a class="css-1fn1rmh" href="#">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x0c...c9e8" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="img/pindle.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">PENDLE</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">3.627%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">15.56k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($75.11k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">15.39k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($74.28k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a>
+                <a class="css-1fn1rmh" href="#">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x91...6548" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="img/arb.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">ARB</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.869%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">302.56k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($308.71k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">13.05k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($13.32k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0xff...5cc8" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">USDC.e</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">9.229%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">324.22k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($324.23k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">150.99k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($151.00k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x4cb9a7ae498cedcbb5eae9f25736ae7d428c9d66?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x4c...9d66" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x4cb9a7ae498cedcbb5eae9f25736ae7d428c9d66.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">XAI</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.597%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">24.39k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($16.60k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">2,612.33</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($1,778.13)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0xfd...cbb9" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">USDT</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">8.643%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">26.88k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($26.88k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">23.05k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($23.05k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0xaf88d065e77c8cc2239327c5edb3a432268e5831?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0xaf...5831" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xaf88d065e77c8cc2239327c5edb3a432268e5831.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">USDC</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">11.32%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">7,603.44</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($7,603.59)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.00</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($0.00)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x3082cc23568ea640225c2467653db90e9250aaa0?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x30...aaa0" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x3082cc23568ea640225c2467653db90e9250aaa0.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">RDNT</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">3.113%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">107.27k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($20.24k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">669.52</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($126.34)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x37...2f07" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">JOE</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">3.555%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1,192.72</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($573.47)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">99.17</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($47.68)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0xfc...ad0a" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">GMX</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">3.607%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">53.04</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($1,302.53)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.726</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($42.40)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x83d6c8c06ac276465e4c92e7ac8c23740f435140?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x83...5140" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x83d6c8c06ac276465e4c92e7ac8c23740f435140.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">HMX</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.3919%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">2,519.50</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($17.00k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.865</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($12.58)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x2f...5b0f" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">WBTC</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.722%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.4922</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($30.69k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.2664</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($16.61k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x51318b7d00db7acc4026c88c3952b66278b6a67f?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x51...a67f" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x51318b7d00db7acc4026c88c3952b66278b6a67f.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">PLS</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.6420%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">100.30k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($3,071.79)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.00</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($0.00)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x93b346b6bc2548da6a1e7d98e9a421b42541425b?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x93...425b" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x93b346b6bc2548da6a1e7d98e9a421b42541425b.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">LUSD</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">10.35%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1,161.07</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($1,158.78)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.00</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($0.00)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x3d9907f9a368ad0a51be60f7da3b97cf940982d8?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x3d...82d8" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x3d9907f9a368ad0a51be60f7da3b97cf940982d8.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">GRAIL</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.879%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">1.868</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($2,277.23)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.00</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($0.00)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x0341c0c0ec423328621788d4854119b97f44e391?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x03...e391" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x0341c0c0ec423328621788d4854119b97f44e391.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">SILO</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.8287%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">428.72k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($32.64k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">2,394.55</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($182.29)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x58b9cb810a68a7f3e1e4f8cb45d1b9b3c79705e8?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x58...05e8" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x58b9cb810a68a7f3e1e4f8cb45d1b9b3c79705e8.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">NEXT</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.1391%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">18.09k</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($3,652.27)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">264.88</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($53.47)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a><a class="css-1fn1rmh" href="/lending/0x539bde0d7dbd336b79148aa742883198bbf60342?action=deposit">
+                    <div class="MuiStack-root css-us2jy7">
+                        <div class="MuiStack-root css-1hdfonc"><img alt="token-image-0x53...0342" loading="lazy"
+                                width="32" height="32" decoding="async" data-nimg="1" class="css-1i8k1gd"
+                                src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x539bde0d7dbd336b79148aa742883198bbf60342.svg"
+                                style="color: transparent;">
+                            <p class="MuiTypography-root MuiTypography-body1 css-vvufw5">MAGIC</p>
+                        </div>
+                        <div class="MuiStack-root css-rurlj0">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">
+                                    <div class="MuiStack-root css-ct9q29">APY<svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InfoOutlinedIcon"
+                                            aria-label="Compounded annualized rate of return on a deposit. Yield is derived from Stella Strategy and distributed daily."
+                                            style="font-size: 12px; color: currentcolor;">
+                                            <path
+                                                d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                            </path>
+                                        </svg></div>
+                                </h6>
+                            </div>
+                            <div class="MuiStack-root css-5ax1kt">
+                                <div class="MuiStack-root css-ct9q29"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.1685%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Supply</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">166.06</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($119.90)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-wkqk46">
+                            <div class="MuiBox-root css-1hg59ch">
+                                <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">Total Borrow</h6>
+                            </div>
+                            <div class="MuiStack-root css-8v90jo"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-o38pos">0.00</span>
+                                <div class="MuiBox-root css-ubmkps"><span
+                                        class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">($0.00)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MuiStack-root css-hpwt1"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container wrap">
+            <nav class="wrap">
+                <a href="#">Doc</a>
+                <a href="#">Audit</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Media Kit</a>
+            </nav>
+            <div class="soc wrap">
+                <a href="#"><img loading="lazy" src="img/twitter.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/discord.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/medium.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/telegram.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/github.svg" alt="tw"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="modal" id="modalWallet">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <img src="img/wallet.svg" alt="i" loading="lazy">
+            <h3>You haven’t connected your wallet to Stella.</h3>
+            <button class="btn">Connect Wallet</button>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.4.1.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+
+</body>
+
+</html>

@@ -25,7 +25,7 @@ body
     z-index: 1
     padding-top: 74px
 
-    &.active
+    &.is__active
         overflow: hidden
 
 mark
@@ -123,7 +123,7 @@ section
     text-align: center
     color: $black
     border: 1px solid $prime
-    padding: 8px 16px
+    padding: 8px 16px 
     background-color: $prime
     border-radius: 8px
 
@@ -297,7 +297,7 @@ textarea
                     width: 100%
                     left: 0
 
-            &.active
+            &.is__active
                 span
                     top: 55%
                     left: 50%
@@ -310,10 +310,12 @@ textarea
                         left: 50%
                         transform: translate(-50%, -50%) rotate(-90deg)
 
+        &_outline
+            padding: 8px
+
 @media screen and ( max-width: 700px )
     .btn
         font-size: 12px
-        padding: 8px 30px 7px
 
     .container
         padding: 0 16px

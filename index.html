@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -34,15 +34,18 @@
     <main class="main">
         <div class="container">
             <h1 class="h5">Strategy List</h1>
-            <img src="img/point-sharing.svg" alt="sharing">
+            <picture>
+                <source media="(max-width: 700px)" srcset="img/point-sharing__mobile.jpg">
+                <img src="img/point-sharing.jpg" class="main-point-sharing" alt="sharing">
+            </picture>
             <div class="tab-btns">
-                <button class="tab__btn is__active">🔎 All</button>
-                <button class="tab__btn">🔥 Hot</button>
-                <button class="tab__btn">🔖 Bookmark</button>
-                <button class="tab__btn"><img src="img/penpie.svg" alt="i"> penpie</button>
-                <button class="tab__btn"><img src="img/camelot.svg" alt="i"> Camelot</button>
-                <button class="tab__btn"><img src="img/traderjoe.svg" alt="i"> Trader Joe V2</button>
-                <button class="tab__btn"><img src="img/uniswap.svg" alt="i"> Uniswap V3</button>
+                <button data-filter="1" class="tab__btn is__active">🔎 All</button>
+                <button data-filter="2" class="tab__btn">🔥 Hot</button>
+                <button data-filter="3" class="tab__btn">🔖 Bookmark</button>
+                <button data-filter="4" class="tab__btn"><img src="img/penpie.svg" alt="i"> penpie</button>
+                <button data-filter="5" class="tab__btn"><img src="img/camelot.svg" alt="i"> Camelot</button>
+                <button data-filter="6" class="tab__btn"><img src="img/traderjoe.svg" alt="i"> Trader Joe V2</button>
+                <button data-filter="7" class="tab__btn"><img src="img/uniswap.svg" alt="i"> Uniswap V3</button>
             </div>
             <div class="MuiStack-root css-guty4c main-headline">
                 <div class="MuiStack-root css-95atsm">
@@ -62,112 +65,18 @@
             </div>
 
             <div class="MuiStack-root css-7p4kzq">
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="4" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="img/0x.svg"
-                                        style="color: transparent; margin-left: 0px;"></div>
-                                <div class="MuiStack-root css-1r9kwv0">
-                                    <div class="MuiStack-root css-12mq65g">
-                                        <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">rsETH</p>
-                                        <div class="MuiBox-root css-0">
-                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(51 Days)</p>
-                                        </div>
-                                    </div>
-                                    <div class=" MuiBox-root css-dxt8m4"
-                                        aria-label="Hyper Strategy utilize the liquidity from Stella Hyper Lending pool.">
-                                        <div class="MuiBox-root css-79elbk">
-                                            <div class="MuiBox-root css-1hki280">
-                                                <div class="MuiBox-root css-1kby21v">
-                                                    <div class="text-container MuiBox-root css-ot23c2"><span
-                                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1mhrmsa">Hyper</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="border-glow MuiBox-root css-1u3hqx3">
-                                                <div class="border-glow-inner-container MuiBox-root css-zx1qif">
-                                                    <div class="border-glow-inner MuiBox-root css-xrr8tt"></div>
-                                                </div>
-                                            </div>
-                                            <div class="border-gradient MuiBox-root css-jhcsam">
-                                                <div class="border-gradient-inner MuiBox-root css-xrr8tt"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="MuiStack-root css-gjizid">
-                                    <div class="MuiStack-root  css-2tztx7"
-                                        aria-label="Earn EigenLayer Points and Kelp Miles up to 7.5x">
-                                        <div class="MuiStack-root css-u4p24i">
-                                            <img alt="eigen" loading="lazy" width="14" height="14" decoding="async"
-                                                data-nimg="1" src="../img/eigen.svg" style="color: transparent;"><img
-                                                alt="kelp" loading="lazy" width="14" height="14" decoding="async"
-                                                data-nimg="1" src="../img/kelp.svg"
-                                                style="color: transparent; margin-left: -2px;">
-                                        </div>
-                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-kqdrv3">7.5x</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="MuiStack-root css-eb7nk5">
-                                <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">43.59%</span>
-                                </div>
-                                <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
-                                    <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">12.30%</span>
-                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="MuiStack-root css-1bkxtup"><span
-                                    class="MuiTypography-root MuiTypography-body1-mono css-1hqc7wo">6.00X</span></div>
-                            <div class="MuiStack-root css-uq7dtg">
-                                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
-                                    style="min-height: 0px;">
-                                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
-                                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
-                                            <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/penpie.svg"
-                                                        width="20" height="20" style="opacity: 0.7;">
-                                                    <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Penpie
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="MuiStack-root css-fjcmtc">
-                    <div class="MuiStack-root css-1ofqig9">
-                        <div class="MuiStack-root css-xymnl5">
-                            <div class="MuiStack-root css-n3cej3">
-                                <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x35751007a407ca6feffe80b3cb397736d2cf4dbe.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/eETH.svg"
                                         style="color: transparent; margin-left: 0px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">eETH</p>
                                         <div class="MuiBox-root css-0">
-                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(51 Days)</p>
+                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(49 Days)</p>
                                         </div>
                                     </div>
                                     <div class=" MuiBox-root css-dxt8m4"
@@ -195,10 +104,9 @@
                                     <div class="MuiStack-root  css-2tztx7"
                                         aria-label="Earn EigenLayer Points and Etherfi Points up to 6x">
                                         <div class="MuiStack-root css-u4p24i"><img alt="eigen" loading="lazy" width="14"
-                                                height="14" decoding="async" data-nimg="1" src="../img/eigen.svg"
+                                                height="14" decoding="async" data-nimg="1" src="img/eigen.svg"
                                                 style="color: transparent;"><img alt="etherfi" loading="lazy" width="14"
-                                                height="14" decoding="async" data-nimg="1"
-                                                src="img/etherfi.svg"
+                                                height="14" decoding="async" data-nimg="1" src="img/etherfi.svg"
                                                 style="color: transparent; margin-left: -2px;"></div>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-kqdrv3">6x</h6>
                                     </div>
@@ -206,21 +114,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">51.62%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">49.25%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">13.31%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">12.63%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -233,8 +133,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/penpie.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/penpie.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Penpie
                                                     </p>
@@ -247,17 +146,96 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="4" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x4cb9a7ae498cedcbb5eae9f25736ae7d428c9d66.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/0x.svg"
+                                        style="color: transparent; margin-left: 0px;"></div>
+                                <div class="MuiStack-root css-1r9kwv0">
+                                    <div class="MuiStack-root css-12mq65g">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">rsETH</p>
+                                        <div class="MuiBox-root css-0">
+                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(49 Days)</p>
+                                        </div>
+                                    </div>
+                                    <div class=" MuiBox-root css-dxt8m4"
+                                        aria-label="Hyper Strategy utilize the liquidity from Stella Hyper Lending pool.">
+                                        <div class="MuiBox-root css-79elbk">
+                                            <div class="MuiBox-root css-1hki280">
+                                                <div class="MuiBox-root css-1kby21v">
+                                                    <div class="text-container MuiBox-root css-ot23c2"><span
+                                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1mhrmsa">Hyper</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-glow MuiBox-root css-1u3hqx3">
+                                                <div class="border-glow-inner-container MuiBox-root css-zx1qif">
+                                                    <div class="border-glow-inner MuiBox-root css-xrr8tt"></div>
+                                                </div>
+                                            </div>
+                                            <div class="border-gradient MuiBox-root css-jhcsam">
+                                                <div class="border-gradient-inner MuiBox-root css-xrr8tt"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiStack-root css-gjizid">
+                                    <div class="MuiStack-root  css-2tztx7"
+                                        aria-label="Earn EigenLayer Points and Kelp Miles up to 7.5x">
+                                        <div class="MuiStack-root css-u4p24i"><img alt="eigen" loading="lazy" width="14"
+                                                height="14" decoding="async" data-nimg="1" src="img/eigen.svg"
+                                                style="color: transparent;"><img alt="kelp" loading="lazy" width="14"
+                                                height="14" decoding="async" data-nimg="1" src="img/kelp.svg"
+                                                style="color: transparent; margin-left: -2px;"></div>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-kqdrv3">7.5x</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-eb7nk5">
+                                <div class="MuiStack-root css-8v90jo"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">40.79%</span>
+                                </div>
+                                <div class="MuiStack-root css-1so0477">
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
+                                    <div class="MuiStack-root css-u4p24i"><span
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">11.10%</span>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-1bkxtup"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-1hqc7wo">6.00X</span></div>
+                            <div class="MuiStack-root css-uq7dtg">
+                                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
+                                    style="min-height: 0px;">
+                                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                            <div class="MuiStack-root css-3jdy22">
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/penpie.svg"
+                                                        width="20" height="20" style="opacity: 0.7;">
+                                                    <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Penpie
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="5" class="MuiStack-root css-fjcmtc">
+                    <div class="MuiStack-root css-1ofqig9">
+                        <div class="MuiStack-root css-xymnl5">
+                            <div class="MuiStack-root css-n3cej3">
+                                <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
+                                        height="24" decoding="async" data-nimg="1" src="img/xia.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x82af49447d8a07e3bd95bd0d56f35241523fbab1.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/eth.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">XAI/ETH</p>
@@ -267,21 +245,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">402.50%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">375.83%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">126.24%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">118.14%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -294,8 +264,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="../img/camelot.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/camelot.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Camelot
                                                     </p>
@@ -308,17 +277,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="6" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/pindle.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x82af49447d8a07e3bd95bd0d56f35241523fbab1.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/eth.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">PENDLE/ETH</p>
@@ -331,21 +298,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">1,052.37%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">638.92%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">264.57%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">161.90%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -358,8 +317,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/traderjoe.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/traderjoe.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Trader
                                                         Joe V2</p>
@@ -372,17 +330,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/pindle.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x82af49447d8a07e3bd95bd0d56f35241523fbab1.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/eth.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">PENDLE/ETH</p>
@@ -395,21 +351,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">1,297.95%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">669.22%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">325.73%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">169.41%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -422,8 +370,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/uniswap.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
                                                         V3</p>
@@ -436,17 +383,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x912ce59144191c1204e64559fe8253a0e49e6548.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/arb.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/usdc.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ARB/USDC.e</p>
@@ -459,21 +404,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">670.98%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">502.15%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">169.84%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">128.10%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -486,8 +423,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/uniswap.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
                                                         V3</p>
@@ -500,17 +436,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x912ce59144191c1204e64559fe8253a0e49e6548.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/arb.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/usdc.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ARB/USDC.e</p>
@@ -523,21 +457,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">694.61%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">485.65%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">175.70%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">124.03%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -550,8 +476,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/uniswap.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
                                                         V3</p>
@@ -564,17 +489,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="6" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x82af49447d8a07e3bd95bd0d56f35241523fbab1.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/eth.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/usdc.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ETH/USDC.e</p>
@@ -587,21 +510,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">476.39%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">493.53%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">121.75%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">125.97%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -614,8 +529,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/traderjoe.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/traderjoe.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Trader
                                                         Joe V2</p>
@@ -628,19 +542,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="4" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/reth.svg"
                                         style="color: transparent; margin-left: 0px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">rETH</p>
                                         <div class="MuiBox-root css-0">
-                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(415 Days)</p>
+                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(413 Days)</p>
                                         </div>
                                     </div>
                                     <div class=" MuiBox-root css-dxt8m4"
@@ -668,21 +581,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">17.26%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">16.99%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">4.10%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">4.05%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -695,8 +600,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/penpie.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/penpie.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Penpie
                                                     </p>
@@ -709,19 +613,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="4" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x5979d7b546e38e414f7e9822514be443a4800529.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/wstETH.svg"
                                         style="color: transparent; margin-left: 0px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">wstETH</p>
                                         <div class="MuiBox-root css-0">
-                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(51 Days)</p>
+                                            <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">(49 Days)</p>
                                         </div>
                                     </div>
                                     <div class=" MuiBox-root css-dxt8m4"
@@ -749,21 +652,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">32.75%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">32.96%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">5.93%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">5.95%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -776,8 +671,7 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/penpie.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/penpie.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Penpie
                                                     </p>
@@ -790,17 +684,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="MuiStack-root css-fjcmtc">
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
                     <div class="MuiStack-root css-1ofqig9">
                         <div class="MuiStack-root css-xymnl5">
                             <div class="MuiStack-root css-n3cej3">
                                 <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
-                                        height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x82af49447d8a07e3bd95bd0d56f35241523fbab1.svg"
+                                        height="24" decoding="async" data-nimg="1" src="img/eth.svg"
                                         style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
                                         loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
-                                        src="https://storage.googleapis.com/stella-frontend-assets/tokens/42161/general/0x912ce59144191c1204e64559fe8253a0e49e6548.svg"
-                                        style="color: transparent; margin-left: -6px;"></div>
+                                        src="img/arb.svg" style="color: transparent; margin-left: -6px;"></div>
                                 <div class="MuiStack-root css-1r9kwv0">
                                     <div class="MuiStack-root css-12mq65g">
                                         <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ETH/ARB</p>
@@ -813,21 +705,13 @@
                             </div>
                             <div class="MuiStack-root css-eb7nk5">
                                 <div class="MuiStack-root css-8v90jo"><span
-                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">191.38%</span>
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">118.97%</span>
                                 </div>
                                 <div class="MuiStack-root css-1so0477">
-                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6><svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon"
-                                        aria-label="APR from implementing the strategy without any leverage"
-                                        style="font-size: 12px; color: currentcolor;">
-                                        <path
-                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-                                        </path>
-                                    </svg>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
                                     <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
                                     <div class="MuiStack-root css-u4p24i"><span
-                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">51.96%</span>
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">34.31%</span>
                                         <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
                                     </div>
                                 </div>
@@ -840,8 +724,219 @@
                                     <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
                                         <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
                                             <div class="MuiStack-root css-3jdy22">
-                                                <div class="MuiStack-root css-hp68mp"><img
-                                                        src="https://storage.googleapis.com/stella-frontend-assets/protocols/uniswap.svg"
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
+                                                        width="20" height="20" style="opacity: 0.7;">
+                                                    <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
+                                                        V3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
+                    <div class="MuiStack-root css-1ofqig9">
+                        <div class="MuiStack-root css-xymnl5">
+                            <div class="MuiStack-root css-n3cej3">
+                                <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
+                                        height="24" decoding="async" data-nimg="1" src="img/eth.svg"
+                                        style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
+                                        loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                        src="img/usdc.svg" style="color: transparent; margin-left: -6px;"></div>
+                                <div class="MuiStack-root css-1r9kwv0">
+                                    <div class="MuiStack-root css-12mq65g">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ETH/USDC.e</p>
+                                        <div class="MuiBox-root css-0" aria-label="Fee Tier">
+                                            <p class="MuiTypography-root MuiTypography-body2 css-7wkbxh">(0.05%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiStack-root css-gjizid"></div>
+                            </div>
+                            <div class="MuiStack-root css-eb7nk5">
+                                <div class="MuiStack-root css-8v90jo"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">315.08%</span>
+                                </div>
+                                <div class="MuiStack-root css-1so0477">
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
+                                    <div class="MuiStack-root css-u4p24i"><span
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">82.13%</span>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-1bkxtup"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-1hqc7wo">5.00X</span></div>
+                            <div class="MuiStack-root css-uq7dtg">
+                                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
+                                    style="min-height: 0px;">
+                                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                            <div class="MuiStack-root css-3jdy22">
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
+                                                        width="20" height="20" style="opacity: 0.7;">
+                                                    <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
+                                                        V3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
+                    <div class="MuiStack-root css-1ofqig9">
+                        <div class="MuiStack-root css-xymnl5">
+                            <div class="MuiStack-root css-n3cej3">
+                                <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
+                                        height="24" decoding="async" data-nimg="1" src="img/eth.svg"
+                                        style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
+                                        loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                        src="img/arb.svg" style="color: transparent; margin-left: -6px;"></div>
+                                <div class="MuiStack-root css-1r9kwv0">
+                                    <div class="MuiStack-root css-12mq65g">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ETH/ARB</p>
+                                        <div class="MuiBox-root css-0" aria-label="Fee Tier">
+                                            <p class="MuiTypography-root MuiTypography-body2 css-7wkbxh">(0.05%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiStack-root css-gjizid"></div>
+                            </div>
+                            <div class="MuiStack-root css-eb7nk5">
+                                <div class="MuiStack-root css-8v90jo"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">130.83%</span>
+                                </div>
+                                <div class="MuiStack-root css-1so0477">
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
+                                    <div class="MuiStack-root css-u4p24i"><span
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">37.21%</span>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-1bkxtup"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-1hqc7wo">5.00X</span></div>
+                            <div class="MuiStack-root css-uq7dtg">
+                                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
+                                    style="min-height: 0px;">
+                                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                            <div class="MuiStack-root css-3jdy22">
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
+                                                        width="20" height="20" style="opacity: 0.7;">
+                                                    <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
+                                                        V3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
+                    <div class="MuiStack-root css-1ofqig9">
+                        <div class="MuiStack-root css-xymnl5">
+                            <div class="MuiStack-root css-n3cej3">
+                                <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
+                                        height="24" decoding="async" data-nimg="1" src="img/eth.svg"
+                                        style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
+                                        loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                        src="img/USDT.svg" style="color: transparent; margin-left: -6px;"></div>
+                                <div class="MuiStack-root css-1r9kwv0">
+                                    <div class="MuiStack-root css-12mq65g">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">ETH/USDT</p>
+                                        <div class="MuiBox-root css-0" aria-label="Fee Tier">
+                                            <p class="MuiTypography-root MuiTypography-body2 css-7wkbxh">(0.05%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiStack-root css-gjizid"></div>
+                            </div>
+                            <div class="MuiStack-root css-eb7nk5">
+                                <div class="MuiStack-root css-8v90jo"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">330.41%</span>
+                                </div>
+                                <div class="MuiStack-root css-1so0477">
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
+                                    <div class="MuiStack-root css-u4p24i"><span
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">85.88%</span>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-1bkxtup"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-1hqc7wo">5.00X</span></div>
+                            <div class="MuiStack-root css-uq7dtg">
+                                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
+                                    style="min-height: 0px;">
+                                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                            <div class="MuiStack-root css-3jdy22">
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
+                                                        width="20" height="20" style="opacity: 0.7;">
+                                                    <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
+                                                        V3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="7" class="MuiStack-root css-fjcmtc">
+                    <div class="MuiStack-root css-1ofqig9">
+                        <div class="MuiStack-root css-xymnl5">
+                            <div class="MuiStack-root css-n3cej3">
+                                <div class="MuiBox-root css-1d7dhat"><img alt="Token Symbol" loading="lazy" width="24"
+                                        height="24" decoding="async" data-nimg="1" src="img/WBTC.svg"
+                                        style="color: transparent; margin-left: 0px;"><img alt="Token Symbol"
+                                        loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                        src="img/eth.svg" style="color: transparent; margin-left: -6px;"></div>
+                                <div class="MuiStack-root css-1r9kwv0">
+                                    <div class="MuiStack-root css-12mq65g">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1qeiy3n">WBTC/ETH</p>
+                                        <div class="MuiBox-root css-0" aria-label="Fee Tier">
+                                            <p class="MuiTypography-root MuiTypography-body2 css-7wkbxh">(0.05%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiStack-root css-gjizid"></div>
+                            </div>
+                            <div class="MuiStack-root css-eb7nk5">
+                                <div class="MuiStack-root css-8v90jo"><span
+                                        class="MuiTypography-root MuiTypography-body1-mono css-1erriky">36.16%</span>
+                                </div>
+                                <div class="MuiStack-root css-1so0477">
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">(Base</h6>
+                                    <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">:</h6>
+                                    <div class="MuiStack-root css-u4p24i"><span
+                                            class="MuiTypography-root MuiTypography-subtitle1-mono css-1ce2smr">13.29%</span>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle1 css-c89it3">)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiStack-root css-1bkxtup"><span
+                                    class="MuiTypography-root MuiTypography-body1-mono css-1hqc7wo">5.00X</span></div>
+                            <div class="MuiStack-root css-uq7dtg">
+                                <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr"
+                                    style="min-height: 0px;">
+                                    <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                        <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+                                            <div class="MuiStack-root css-3jdy22">
+                                                <div class="MuiStack-root css-hp68mp"><img src="img/uniswap.svg"
                                                         width="20" height="20" style="opacity: 0.7;">
                                                     <p class="MuiTypography-root MuiTypography-body2 css-v0zrd7">Uniswap
                                                         V3</p>
@@ -860,9 +955,33 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="container wrap">
+            <nav class="wrap">
+                <a href="#">Doc</a>
+                <a href="#">Audit</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Media Kit</a>
+            </nav>
+            <div class="soc wrap">
+                <a href="#"><img loading="lazy" src="img/twitter.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/discord.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/medium.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/telegram.svg" alt="tw"></a>
+                <a href="#"><img loading="lazy" src="img/github.svg" alt="tw"></a>
+            </div>
+        </div>
 
     </footer>
+
+    <div class="modal" id="modalWallet">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <img src="img/wallet.svg" alt="i" loading="lazy">
+            <h3>You haven’t connected your wallet to Stella.</h3>
+            <button class="btn">Connect Wallet</button>
+        </div>
+    </div>
 
 
 
