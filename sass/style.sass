@@ -136,23 +136,27 @@
             padding: 10px
 
 .leaderboard
-    &-wrap 
+    &-wrap
         align-items: flex-start
-        
+
     .container
         max-width: 1282px
 
-    .col
+    &__tab
+        margin: 0 0 8px
+        font-size: 1.1875rem
+        line-height: 1.875rem
+        font-weight: normal
+        letter-spacing: 0.02rem
         width: 49%
-        &__heading
-            margin: 0 0 8px
-            font-size: 1.1875rem
-            line-height: 1.875rem
-            font-weight: normal
-            letter-spacing: 0.02rem
+        i
+            font-style: normal
+
+    .css-j7qwjs
+        width: 49%
 
     @media screen and ( max-width: 1000px )
-        .col
+        .css-j7qwjs
             width: 100%
             background-color: black
             border: 1px solid rgb(89, 89, 89)
@@ -173,6 +177,32 @@
             .css-gtfp90,
             .css-1hnws38
                 min-width: 500px
+
+        &-tab
+            border-bottom: 1px solid #595959
+            margin: 0 0 24px
+
+        &__tab
+            font-size: 0.8125rem
+            line-height: 1.3125rem
+            letter-spacing: 0.02rem
+            color: rgb(163, 163, 163)
+            margin: 0
+            width: 50%
+            padding: 12px 16px
+            position: relative
+            top: 1px
+            text-align: center
+            border-bottom: 1px solid rgba(0, 0, 0, 0)
+            &:active
+                background-color: rgba($prime, .1)
+
+            i
+                display: none
+
+            &.is__active
+                color: white
+                border-color: $prime
 
 @import 'headline'
 @import 'content'

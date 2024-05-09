@@ -22,6 +22,15 @@ $('.position__btn').on('click', function (e) {
     $('.position-title').css('display', 'none');
     $('[data-position=' + trId + ']').css('display', 'flex');
 });
+$('.leaderboard__tab').on('click', function (e) {
+    if (window.innerWidth <= 1000) {
+        $('.leaderboard__tab').removeClass('is__active');
+        $(this).addClass('is__active');
+        const trId = $(this).attr('data-boardbtn');
+        $('[data-board]').hide();
+        $('[data-board=' + trId + ']').fadeIn();
+    } else { $('[data-board]').fadeIn(); }
+});
 
 function hideModals() {
     $('.modal').removeClass('is__active').fadeOut(300);
@@ -37,7 +46,7 @@ $(function () {
 
     $('.modal-close').on('click', () => { hideModals(); });
 
-    $('[data-id], a.css-1fn1rmh').on('click', () => { showModal('#modalWallet'); });
+    $('[data-id], a.css-1fn1rmh, .css-16k6ata').on('click', () => { showModal('#modalWallet'); });
 
     $('[data-modal]').on('click', function (e) {
         e.preventDefault();
@@ -50,8 +59,10 @@ $(function () {
             ($(e.target).parents('.nav__item').length) ||
             ($(e.target).parents('.css-fjcmtc').length) ||
             ($(e.target).parents('.css-1fn1rmh').length) ||
+            ($(e.target).parents('.css-16k6ata').length) ||
             ($(e.target).hasClass('btn')) ||
             ($(e.target).hasClass('css-fjcmtc')) ||
+            ($(e.target).hasClass('css-16k6ata')) ||
             ($(e.target).hasClass('css-1fn1rmh')) ||
             ($(e.target).hasClass('modal-content'))
         )) { hideModals(); }
